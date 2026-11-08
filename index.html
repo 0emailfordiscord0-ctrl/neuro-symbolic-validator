@@ -26,8 +26,8 @@
             <p class="text-emerald-400 mt-2">-&gt; [FEEDBACK LOOP] Injecting counterexample to LLM...</p>
         </div>
 
-        <form onsubmit="event.preventDefault(); window.location.href='mailto:contact@neurosymbolic.ai?subject=Beta Waitlist Request&body=Please add me to the beta: ' + encodeURIComponent(this.email.value);" class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
-            <input type="email" name="email" placeholder="Enter your work email" required class="bg-slate-900 border border-slate-800 px-4 py-3 rounded-lg focus:outline-none focus:border-emerald-500 text-sm flex-1 text-slate-100">
+        <form id="waitlist-form" class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
+            <input type="email" id="email-input" placeholder="Enter your work email" required class="bg-slate-900 border border-slate-800 px-4 py-3 rounded-lg focus:outline-none focus:border-emerald-500 text-sm flex-1 text-slate-100">
             
             <button type="submit" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-6 py-3 rounded-lg text-sm transition cursor-pointer">
                 Join Beta
@@ -38,5 +38,13 @@
     <footer class="text-center py-8 text-xs text-slate-600 border-t border-slate-900">
         &copy; 2026 Neuro-Symbolic Validator. All rights reserved.
     </footer>
+
+    <script>
+        document.getElementById('waitlist-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email-input').value;
+            window.location.href = 'mailto:contact@neurosymbolic.ai?subject=Beta%20Waitlist%20Request&body=Please%20add%20me%20to%20the%20beta:%20' + encodeURIComponent(email);
+        });
+    </script>
 </body>
 </html>
