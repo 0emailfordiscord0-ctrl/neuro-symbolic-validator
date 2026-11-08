@@ -26,12 +26,15 @@
             <p class="text-emerald-400 mt-2">-> [FEEDBACK LOOP] Injecting counterexample to LLM...</p>
         </div>
 
-        <form action="https://formspree.io/f/your-form-id" method="POST" class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
-            <input type="email" name="email" placeholder="Enter your work email" required class="bg-slate-900 border border-slate-800 px-4 py-3 rounded-lg focus:outline-none focus:border-emerald-500 text-sm flex-1">
-            <button type="submit" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-6 py-3 rounded-lg text-sm transition cursor-pointer">
-                Join Beta
-            </button>
-        </form>
+        <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
+    		<input type="hidden" name="redirect" value="https://web3forms.com/success">
+    
+    		<input type="email" name="email" placeholder="Enter your work email" required class="bg-slate-900 border border-slate-800 px-4 py-3 rounded-lg focus:outline-none focus:border-emerald-500 text-sm flex-1 text-slate-100">
+    
+    		<button type="submit" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-6 py-3 rounded-lg text-sm transition cursor-pointer">
+        Join Beta
+    		</button>
+	</form>
     </main>
 
     <footer class="text-center py-8 text-xs text-slate-600 border-t border-slate-900">
