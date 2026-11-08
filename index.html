@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuro-Symbolic Validator | AI Code Verification</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
+    <main class="max-w-3xl mx-auto px-6 py-20 text-center">
+        <span class="inline-block bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-3 py-1 rounded-full mb-6 border border-emerald-500/20">
+            Infrastructure for AI-Generated Code
+        </span>
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
+            Mathematically prove AI patches before they hit production.
+        </h1>
+        <p class="text-lg text-slate-400 mb-10 max-w-xl mx-auto">
+            We combine LLM patch generation with Z3 theorem proving to catch memory corruption and integer overflows instantly. Zero false confidence.
+        </p>
+        
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl text-left font-mono text-sm text-emerald-400 mb-10 shadow-2xl">
+            <p class="text-slate-500"># Z3 Verification Output</p>
+            <p class="text-slate-300">Target: C/C++ Integer Overflow & Safety Check</p>
+            <p class="text-rose-400 mt-2">[!] VULNERABILITY DETECTED BY Z3 SOLVER</p>
+            <p class="text-slate-300">&nbsp;&nbsp;&nbsp;&nbsp;Counterexample input x = 2147483600</p>
+            <p class="text-emerald-400 mt-2">-> [FEEDBACK LOOP] Injecting counterexample to LLM...</p>
+        </div>
+
+        <form action="https://formspree.io/f/your-form-id" method="POST" class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
+            <input type="email" name="email" placeholder="Enter your work email" required class="bg-slate-900 border border-slate-800 px-4 py-3 rounded-lg focus:outline-none focus:border-emerald-500 text-sm flex-1">
+            <button type="submit" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-6 py-3 rounded-lg text-sm transition cursor-pointer">
+                Join Beta
+            </button>
+        </form>
+    </main>
+
+    <footer class="text-center py-8 text-xs text-slate-600 border-t border-slate-900">
+        &copy; 2026 Neuro-Symbolic Validator. All rights reserved.
+    </footer>
+</body>
+</html>
