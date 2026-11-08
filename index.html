@@ -17,24 +17,25 @@
         <p class="text-lg text-slate-400 mb-10 max-w-xl mx-auto">
             We combine LLM patch generation with Z3 theorem proving to catch memory corruption and integer overflows instantly. Zero false confidence.
         </p>
-        
+
         <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl text-left font-mono text-sm text-emerald-400 mb-10 shadow-2xl">
             <p class="text-slate-500"># Z3 Verification Output</p>
-            <p class="text-slate-300">Target: C/C++ Integer Overflow & Safety Check</p>
+            <p class="text-slate-300">Target: C/C++ Integer Overflow &amp; Safety Check</p>
             <p class="text-rose-400 mt-2">[!] VULNERABILITY DETECTED BY Z3 SOLVER</p>
             <p class="text-slate-300">&nbsp;&nbsp;&nbsp;&nbsp;Counterexample input x = 2147483600</p>
-            <p class="text-emerald-400 mt-2">-> [FEEDBACK LOOP] Injecting counterexample to LLM...</p>
+            <p class="text-emerald-400 mt-2">-&gt; [FEEDBACK LOOP] Injecting counterexample to LLM...</p>
         </div>
 
         <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
-    		<input type="hidden" name="redirect" value="https://web3forms.com/success">
-    
-    		<input type="email" name="email" placeholder="Enter your work email" required class="bg-slate-900 border border-slate-800 px-4 py-3 rounded-lg focus:outline-none focus:border-emerald-500 text-sm flex-1 text-slate-100">
-    
-    		<button type="submit" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-6 py-3 rounded-lg text-sm transition cursor-pointer">
-        Join Beta
-    		</button>
-	</form>
+            <input type="hidden" name="access_key" value="abef6c52-6888-46b5-84e7-987cc6e32024">
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            
+            <input type="email" name="email" placeholder="Enter your work email" required class="bg-slate-900 border border-slate-800 px-4 py-3 rounded-lg focus:outline-none focus:border-emerald-500 text-sm flex-1 text-slate-100">
+            
+            <button type="submit" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-6 py-3 rounded-lg text-sm transition cursor-pointer">
+                Join Beta
+            </button>
+        </form>
     </main>
 
     <footer class="text-center py-8 text-xs text-slate-600 border-t border-slate-900">
